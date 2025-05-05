@@ -1,104 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: linear-gradient(120deg, #2c003e, #800020);
-            overflow: hidden;
-        }
-        .rosa {
-            position: relative;
-            animation: crecer 2s ease-in-out infinite alternate;
-        }
-        .tallo {
-            width: 6px;
-            height: 200px;
-            background: linear-gradient(to bottom, #2E8B57, #006400);
-            position: relative;
-            margin: auto;
-            border-radius: 3px;
-        }
-        .hojas {
-            position: absolute;
-            width: 30px;
-            height: 20px;
-            background: radial-gradient(circle, #50C878, #2E8B57);
-            border-radius: 50%;
-        }
-        .hoja-izquierda {
-            left: -25px;
-            top: 60px;
-            transform: rotate(-30deg);
-        }
-        .hoja-derecha {
-            right: -25px;
-            top: 80px;
-            transform: rotate(30deg);
-        }
-        .flor {
-            width: 80px;
-            height: 80px;
-            position: absolute;
-            top: -40px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        .petalo {
-            position: absolute;
-            width: 60px;
-            height: 80px;
-            background: radial-gradient(circle, #FF4D4D, #B30000);
-            border-radius: 50% 50% 40% 40%;
-            transform-origin: bottom center;
-            opacity: 0.9;
-        }
-        .p1 { top: -10px; left: 15px; transform: rotate(-15deg); }
-        .p2 { top: -5px; right: 15px; transform: rotate(15deg); }
-        .p3 { bottom: 0px; left: 10px; transform: rotate(-30deg); }
-        .p4 { bottom: 0px; right: 10px; transform: rotate(30deg); }
-        .p5 { bottom: 15px; left: 25px; transform: rotate(0deg); }
-        .centro {
-            width: 25px;
-            height: 25px;
-            background: radial-gradient(circle, #FFD700, #FF8C00);
-            border-radius: 50%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        @keyframes crecer {
-            from {
-                transform: scale(0.95);
-            }
-            to {
-                transform: scale(1.1);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>SpecialInvitation</title>
 </head>
+
 <body>
-    <div class="rosa">
-        <div class="tallo">
-            <div class="hojas hoja-izquierda"></div>
-            <div class="hojas hoja-derecha"></div>
-        </div>
-        <div class="flor">
-            <div class="petalo p1"></div>
-            <div class="petalo p2"></div>
-            <div class="petalo p3"></div>
-            <div class="petalo p4"></div>
-            <div class="petalo p5"></div>
-            <div class="centro"></div>
-        </div>
+    <div class="greetings">
+        <span>H</span>
+        <span>o</span>
+        <span>l</span>
+        <span>a</span>
+        <span>!</span>
     </div>
+    <div class="description">
+        <span>TENGO UNA SORPRESA PARA TI ❤️</span><br>
+        <span>¿TE INTERESA?</span>
+    </div>
+    <div class="button">
+        <button class="botones">
+            <a href="invitation.html" style="color: #fff;">Click Aquí</a>
+        </button>
+    </div>
+
 </body>
+
 </html>
